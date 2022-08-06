@@ -11,7 +11,6 @@ import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import { Container } from './App.styled';
 
 
-
 //! +++++++++++++++++++++++++++++++++++++
 export function App() {
   return (
@@ -25,12 +24,21 @@ export function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title="Upload stats" itemsStatistics={data} />
+      
+      <Statistics title="Upload stats" stats={data} />
+      
+      <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
 
     </div>
-      
   );
 };
+
+
+
+
+
 
 //* ------------- Old -------------------
 // export const App = () => {

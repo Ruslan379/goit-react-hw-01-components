@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
 
 
-export function Statistics({ title, itemsStatistics = [] }) {
+export function Statistics({ title, stats = [] }) {
     return (
         <section className="statistics">
         {title && <h2>{title}</h2>}
         {/* <h2 className="title">Upload stats</h2> */}
 
         <ul className="stat-list">
-            {itemsStatistics.map(item => (
-                <li key={item.id}>
-                    <span className="label">{item.label}</span>
-                    <span className="percentage">{item.percentage}</span>
+            {stats.map(stat => (
+                <li key={stat.id}>
+                    <span className="label">{stat.label}</span>
+                    <span className="percentage">{stat.percentage}</span>
                 </li>
             ))}
         </ul>
@@ -20,13 +20,15 @@ export function Statistics({ title, itemsStatistics = [] }) {
 };
 
 
-
 Statistics.propTypes = {
-    itemsStatistics: PropTypes.arrayOf(
+    stats: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
         }),
     ),
+    title: PropTypes.string
 };
 
 
