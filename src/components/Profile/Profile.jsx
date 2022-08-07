@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './Profile.module.css'
 import defaultImage from '../../components/default.jpg';
 
 
@@ -15,13 +16,13 @@ export function Profile(props) {
     likes
   } = props
   return (
-    <div className="profile">
-      <div className="description">
+    <div className={css.profile}>
+      <div className={css.description}>
         <img
           src={avatar}
           alt="User avatar"
           width="240"
-          className="avatar"
+          className={css.avatar}
         />
         <p className="name">{username}</p>
         <p className="tag">{tag}</p>
