@@ -1,4 +1,4 @@
-.statistics {
+.friendList {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,27 +7,34 @@
     padding: 40px;
     margin-right: 20px;
 
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
     border: 2px solid rgb(61, 61, 61);
+
     border-radius: 20px;
     box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
-
     background-color: rgb(254, 255, 221);
+}
+
+
+.avatar {
+    border: 1px solid rgb(61, 61, 61);
+        padding: 15px;
+        border-radius: 50%;
+        background-color: rgb(205, 232, 255);
+        box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
 }
 
 
 .statList {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 0;
-    /* width: 300px; */
 
-    margin-top: 371px;
+    padding: 0;
 
     list-style-type: none;
     text-align: center; 
-    text-transform: lowercase;
 
     border: 1px solid rgb(0, 0, 0);
     border-right: 2px solid rgb(0, 0, 0);
@@ -37,33 +44,36 @@
 
 
 .item {
-    /* display: block; */
-    padding: 20px;
+    display: flex;
+    align-items: center;
 
+    padding: 10px;
+    
     border-right: 1px solid rgb(0, 0, 0);
     border-bottom: 2px solid rgb(0, 0, 0);
     background-color: rgb(199, 199, 199);
 }
 
 
-.label {
+.status {
     display: block;
-    margin-top: 0;
+
+    margin-right: 5px;
 
     text-align: center;
-    font-size: 16px;
+    /* text-transform: lowercase; */
+    font-size: 12px;
     line-height: 32px;
-    font-weight: 700;
     letter-spacing: 0.5px;
-
-    /* color: rgb(0, 56, 0); */
+    /* font-style: italic; */
 }
 
 
-.percentage {
-    /* display: block;
-    text-align: center; */
-    font-style: italic;
-
-    /* color: rgb(138, 0, 0); */
+.name {
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    /* text-transform: uppercase; */
 }

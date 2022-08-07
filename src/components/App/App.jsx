@@ -29,7 +29,7 @@ export function App() {
 
       <Statistics title="Upload stats" stats={data} />
       
-      <FriendList friends={friends} />
+      <FriendList title="FRIEND LIST" friends={friends} />
 
       <TransactionHistory items={transactions} />
 
