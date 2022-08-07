@@ -1,10 +1,12 @@
-.profile {
-        display: flex;
+.statistics {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
 
     margin-right: 20px;
+
+    text-transform: uppercase;
 
     border: 2px solid rgb(61, 61, 61);
     padding: 40px;
@@ -14,53 +16,7 @@
 }
 
 
-.description {
-    text-align: center;
-}
-
-
-.avatar {
-    border: 1px solid rgb(61, 61, 61);
-        padding: 15px;
-        border-radius: 50%;
-        background-color: rgb(205, 232, 255);
-        box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
-}
-
-
-.name {
-    margin-top: 20px;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    /* text-transform: uppercase; */
-}
-
-
-.tag {
-    margin-top: 0;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    
-    color: blue;
-}
-
-
-.location {
-    margin-top: 0;
-
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-
-    color: rgb(90, 0, 0);
-}
-
-.stats {
+.statList {
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -68,6 +24,7 @@
 
     list-style-type: none;
     text-align: center; 
+    text-transform: lowercase;
 
     border: 1px solid rgb(0, 0, 0);
     border-radius: 2px;
@@ -98,7 +55,8 @@
     color: rgb(0, 56, 0);
 }
 
-.quantity {
+
+.percentage {
     /* display: block;
     text-align: center; */
     font-style: italic;

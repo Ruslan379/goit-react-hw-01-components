@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css'
+
 import defaultImage from '../../components/default.jpg';
+
+import css from './Profile.module.css'
 
 
 
