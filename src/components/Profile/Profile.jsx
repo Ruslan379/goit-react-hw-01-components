@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 
 import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from 'react-icons/fa';
-import { FcBusinessman  } from 'react-icons/fc';
+import { FcBusinessman, FcContacts } from 'react-icons/fc';
+import { MdOutlineAlternateEmail } from 'react-icons/md';
+
+import { iconSize } from '../../constants';
 
 import defaultImage from '../../components/default.jpg';
 
@@ -29,9 +32,9 @@ export function Profile(props) {
           width="240"
           className={css.avatar}
         />
-        <p className={css.name}><FcBusinessman /> {username}</p>
-        <p className={css.tag}>{tag}</p>
-        <p className={css.location}><FaMapMarkerAlt /> {location}</p>
+        <p className={css.name}><FaUserAlt className={css.icon} size={iconSize.sm} />{username}</p>
+        <p className={css.tag}><MdOutlineAlternateEmail  className={css.icon} size={iconSize.md} />{tag}</p>
+        <p className={css.location}><FaMapMarkerAlt className={css.icon} size={iconSize.sm}/>{location}</p>
       </div>
 
       
