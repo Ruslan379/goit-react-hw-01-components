@@ -8,13 +8,15 @@ import { Statistics } from '../Statistics/Statistics';
 import { FriendList } from '../FriendList/FriendList';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 
+import css from './App.module.css'
+
 // import { Container } from './App.styled';
 
 
 //! +++++++++++++++++++++++++++++++++++++
 export function App() {
   return (
-    <div>
+    <div className={css.app}>
       <Profile
         username={user.username}
         tag={user.tag}
