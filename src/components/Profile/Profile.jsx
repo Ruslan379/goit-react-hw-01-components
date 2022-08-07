@@ -4,9 +4,11 @@ import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from 'react-icons/f
 import { FcBusinessman, FcContacts } from 'react-icons/fc';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 
-import { iconSize } from '../../constants';
+// import { iconSize } from '../../constants'; //? OLD, before creating the file jsconfig.json
+import { iconSize } from 'constants';
 
-import defaultImage from '../../components/default.jpg';
+// import defaultImage from '../../components/default.jpg'; //? OLD, before creating the file jsconfig.json
+import defaultImage from 'components/default.jpg'; 
 
 import css from './Profile.module.css'
 
