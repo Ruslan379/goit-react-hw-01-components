@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
 
+import css from './TransactionHistory.module.css'
 
-export function TransactionHistory({ items = [] }) {
+
+export function TransactionHistory({ title, items = [] }) {
     // console.log(items[0]); //!
     return (
-        <table className="item-history">
+        <section className={css.transactionHistory}>
+        {title && <h2>{title}</h2>}
+            
+        <table className={css.itemHistory}>
             <thead>
                 <tr>
                     <th>Type</th>
@@ -23,6 +28,7 @@ export function TransactionHistory({ items = [] }) {
                 ))}
             </tbody>
         </table>
+        </section>
     );
 };
 

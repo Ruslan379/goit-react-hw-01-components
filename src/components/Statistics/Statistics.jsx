@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 
 import css from './Statistics.module.css'
 
+
+
 //! Функция, генерирующая случайный цвет фона
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)

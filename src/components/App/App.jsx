@@ -31,7 +31,7 @@ export function App() {
       
       <FriendList title="FRIEND LIST" friends={friends} />
 
-      <TransactionHistory items={transactions} />
+      <TransactionHistory title="TRANSACTION HISTORY" items={transactions} />
 
     </div>
   );
