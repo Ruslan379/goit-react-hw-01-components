@@ -8,7 +8,7 @@ import { Statistics } from '../Statistics/Statistics';
 import { FriendList } from '../FriendList/FriendList';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 
-import { Container } from './App.styled';
+// import { Container } from './App.styled';
 
 
 //! +++++++++++++++++++++++++++++++++++++
@@ -24,7 +24,7 @@ export function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      
+
       <Statistics title="Upload stats" stats={data} />
       
       <FriendList friends={friends} />
