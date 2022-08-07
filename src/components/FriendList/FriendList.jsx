@@ -11,15 +11,15 @@ export function FriendList({ title, friends = [] }) {
 
         <ul className={css.statList}>
             {friends.map(friend => (
-                <li className={css.item} key={friend.id} style={{backgroundColor: (friend.isOnline ? "#009100" : "#b30000")}}>
-                    <span className={css.status}>{friend.isOnline ? 'On' : 'Off'}</span>
+                <li key={friend.id} className={css.item} style={{сolor: (friend.isOnline ? "#b30000" : "#009100"), backgroundColor: (friend.isOnline ? "#009100" : "#b30000")}}>
+                    <span className={css.status} style={{сolor: (friend.isOnline ? "#b30000" : "#009100")}}>{friend.isOnline ? 'On' : 'Off'}</span>
                     <img
                         className={css.avatar}
                         src={friend.avatar}
                         alt="User avatar"
                         width="48"
                     />
-                    <p className={css.name}>{friend.name}</p>
+                    <p className={css.name} style={{сolor: (friend.isOnline ? "#b30000" : "#009100")}}>{friend.name}</p>
                 </li>
             ))}
             </ul>
