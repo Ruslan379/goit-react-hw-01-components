@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-import { FaMapMarkerAlt, FaUserAlt, FaCalendarAlt, FaClock } from 'react-icons/fa';
-import { FcBusinessman, FcContacts } from 'react-icons/fc';
+import { FaMapMarkerAlt, FaUserAlt } from 'react-icons/fa';
+// import { FcBusinessman, FcContacts } from 'react-icons/fc';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 // import { iconSize } from '../../constants'; //? OLD, before creating the file jsconfig.json
