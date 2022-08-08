@@ -11,41 +11,59 @@ import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
 // import css from './App.module.css' //? OLD, before creating the file jsconfig.json
-import css from 'components/App/App.module.css' //! старый вариант импорта стилей
+import css from 'components/App/App.module.css' //todo = старый вариант импорта стилей
 // import { Container } from './App.styled'; //? OLD, before creating the file jsconfig.json
 import { Container } from 'components/App/App.styled'; //! НОВЫЙ вариант импорта стилей
 
 
 
 
-//! +++++++++++++++++++++++++++++++++++++
+//! +++++++++++++++ НОВЫЙ вариант импорта стилей с App.styled.jsx ++++++++++++++++++
 export function App() {
   return (
     <Container>
-      <div className={css.app}>
-        <Profile
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          followers={user.stats.followers}
-          views={user.stats.views}
-          likes={user.stats.likes}
-        />
-
-        <Statistics title="Upload stats" stats={data} />
-
-        <FriendList title="FRIEND LIST" friends={friends} />
-
-        <TransactionHistory title="TRANSACTION HISTORY" items={transactions} />
-
-      </div>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList title="FRIEND LIST" friends={friends} />
+      <TransactionHistory title="TRANSACTION HISTORY" items={transactions} />
     </Container>
   );
 };
 
 
 
+//todo  ---- старый вариант импорта стилей c App.module.css ----------
+// export function App() {
+//   return (
+//       <div className={css.app}>
+//         <Profile
+//           username={user.username}
+//           tag={user.tag}
+//           location={user.location}
+//           avatar={user.avatar}
+//           followers={user.stats.followers}
+//           views={user.stats.views}
+//           likes={user.stats.likes}
+//         />
+
+//         <Statistics title="Upload stats" stats={data} />
+
+//         <FriendList title="FRIEND LIST" friends={friends} />
+
+//         <TransactionHistory title="TRANSACTION HISTORY" items={transactions} />
+
+//       </div>
+//   );
+// };
+//todo  ________________________________________________________
 
 
 
