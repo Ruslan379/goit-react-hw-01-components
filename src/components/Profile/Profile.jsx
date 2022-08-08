@@ -26,8 +26,6 @@ import { Quantity } from 'components/Profile/Profile.styled';
 
 
 
-
-
 //! +++++++++++++++ НОВЫЙ вариант импорта стилей с Profile.styled.jsx ++++++++++++++++++
 export function Profile(props) {
   // console.log(props); //!
