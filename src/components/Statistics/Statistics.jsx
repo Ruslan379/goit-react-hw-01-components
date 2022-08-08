@@ -1,15 +1,20 @@
 import PropTypes from 'prop-types';
 
+import { FcStatistics } from "react-icons/fc";
+
+import { iconSize } from 'constants';
+
 // import css from './Statistics.module.css' //? OLD, before creating the file jsconfig.json
 // import css from 'components/Statistics/Statistics.module.css' //todo = старый вариант импорта стилей
 //! НОВЫЙ вариант импорта стилей
-import { Statistic, StatList, Item, Label, Percentage } from 'components/Statistics/Statistics.styled'; 
+import { Statistic, StatList, Item, Label, Percentage, IconStatistic } from 'components/Statistics/Statistics.styled'; 
 
 // import { Statistic } from 'components/Statistics/Statistics.styled'; 
 // import { StatList } from 'components/Statistics/Statistics.styled'; 
 // import { Item } from 'components/Statistics/Statistics.styled'; 
 // import { Label } from 'components/Statistics/Statistics.styled'; 
 // import { Percentage } from 'components/Statistics/Statistics.styled'; 
+// import { IconStatistic } from 'components/Statistics/Statistics.styled';
 
 
 
@@ -32,6 +37,10 @@ export function Statistics({ title, stats = [] }) {
         <Statistic>
             {title && <h2>{title}</h2>}
             {/* <h2 className="title">Upload stats</h2> */}
+
+        <IconStatistic>
+                <FcStatistics size={iconSize.elg}/> 
+        </IconStatistic> 
 
             <StatList>
                 {stats.map(stat => (
@@ -60,6 +69,8 @@ export function Statistics({ title, stats = [] }) {
         </Statistic>
     );
 };
+
+
 
 
 Statistics.propTypes = {

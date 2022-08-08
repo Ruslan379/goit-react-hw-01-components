@@ -24,7 +24,7 @@ export const StatList = styled.ul`
     justify-content: space-between;
 
     padding: 0;
-    margin-top: ${props => props.theme.spacing(110)};
+    margin-top: ${props => props.theme.spacing(30)};
 
     list-style-type: none;
     text-align: center; 
@@ -67,4 +67,15 @@ export const Percentage = styled.span`
     font-style: italic;
 
     color: ${props => props.theme.colors.statisticsPercentage};
+`;
+
+
+//!=============== icons ==================== 
+export const IconStatistic = styled.p`
+    margin-top: ${props => props.theme.spacing(5)};
+
+    svg {
+        // margin-right: ${props => props.theme.spacing(3)};
+        // color: ${props => props.theme.colors.iconColor};
+    }
 `;
