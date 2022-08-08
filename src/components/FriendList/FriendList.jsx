@@ -24,8 +24,8 @@ export function FriendList({ title, friends = [] }) {
                     key={friend.id} 
                     // style={{ сolor: (friend.isOnline ? "" : "#009100"), backgroundColor: (friend.isOnline ? "#009100" : "#b30000") }}
                 >
-                    <Status friendIsOnlineStatus={friend.isOnline}
-                        style={{ сolor: (friend.isOnline ? "#b30000" : "#009100") }}
+                    <Status friendIsOnline={friend.isOnline}
+                        // style={{ сolor: (friend.isOnline ? "#b30000" : "#009100") }}
                     >
                         {friend.isOnline ? 'On' : 'Off'}
                     </Status>
@@ -34,7 +34,7 @@ export function FriendList({ title, friends = [] }) {
                         alt="User avatar"
                         width="48"
                     />
-                    <Name friendIsOnlineName={friend.isOnline}
+                    <Name friendIsOnline={friend.isOnline}
                         // style={{ сolor: (friend.isOnline ? "#b30000" : "#009100") }}
                     >
                         {friend.name}

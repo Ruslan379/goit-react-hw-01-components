@@ -67,8 +67,8 @@ export const Status = styled.span`
 
     // color: rgb(255, 50, 0);
 
-    color: ${({ friendIsOnlineStatus }) => {
-        switch (friendIsOnlineStatus) {
+    color: ${({ friendIsOnline }) => {
+        switch (friendIsOnline) {
             case true:
                 return "#fff000";
             case false:
@@ -96,8 +96,8 @@ export const Name = styled.p`
     letter-spacing: 0.5px;
 
     // color: rgb(255, 240, 0);
-    color: ${({ friendIsOnlineName }) => {
-        switch (friendIsOnlineName) {
+    color: ${({ friendIsOnline }) => {
+        switch (friendIsOnline) {
             case true:
                 return "#fff000";
             case false:
