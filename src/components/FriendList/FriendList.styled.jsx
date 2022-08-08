@@ -48,10 +48,12 @@ export const Item = styled.li`
 
     background-color: ${({ friendIsOnline }) => {
         switch (friendIsOnline) {
-            case true:
+            case 'On':
                 return "#009100";
-            case false:
+            case 'Off':
                 return "#b30000";
+            default:
+                return "#c7c7c7";
         }
     }
     };
@@ -73,6 +75,8 @@ export const Status = styled.span`
                 return "#fff000";
             case false:
                 return "#38c500";
+            default:
+                return "#000000";
         }
     }
     };
@@ -102,6 +106,8 @@ export const Name = styled.p`
                 return "#fff000";
             case false:
                 return "#38c500";
+            default:
+                return "#000000";
         }
     }
     };

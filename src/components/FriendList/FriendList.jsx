@@ -19,8 +19,9 @@ export function FriendList({ title, friends = [] }) {
         {title && <h2>{title}</h2>}
 
         <StatList>
-            {friends.map(friend => (
-                <Item friendIsOnline={friend.isOnline}
+                {friends.map(friend => (
+                
+                <Item friendIsOnline={friend.isOnline ? 'On' : 'Off'}
                     key={friend.id} 
                     // style={{ сolor: (friend.isOnline ? "" : "#009100"), backgroundColor: (friend.isOnline ? "#009100" : "#b30000") }}
                 >
