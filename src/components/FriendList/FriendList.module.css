@@ -17,15 +17,6 @@
 }
 
 
-.avatar {
-    border: 1px solid rgb(61, 61, 61);
-        padding: 15px;
-        border-radius: 50%;
-        background-color: rgb(205, 232, 255);
-        box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
-}
-
-
 .statList {
     display: flex;
     flex-direction: column;
@@ -56,18 +47,22 @@
 
 
 .status {
-    /* display: block; */
-
     margin-right: 15px;
 
-    /* text-align: center; */
-    /* text-transform: lowercase; */
     font-size: 14px;
     line-height: 32px;
     letter-spacing: 0.5px;
-    /* font-style: italic; */
 
     color: rgb(255, 50, 0);
+}
+
+
+.avatar {
+    border: 1px solid rgb(61, 61, 61);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(205, 232, 255);
+    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
 }
 
 
