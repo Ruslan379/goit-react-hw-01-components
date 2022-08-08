@@ -29,10 +29,10 @@ export const StatList = styled.ul`
     list-style-type: none;
     text-align: center; 
 
-    border: 1px solid rgb(0, 0, 0);
-    border-right: 2px solid rgb(0, 0, 0);
-    border-radius: 2px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    border: 1px solid ${props => props.theme.colors.black};
+    border-right: 2px solid ${props => props.theme.colors.black};
+    border-radius: ${props => props.theme.spacing(0.5)};
+    box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};
 `;
 
 
@@ -40,11 +40,10 @@ export const Item = styled.li`
     display: flex;
     align-items: center;
 
-    padding: 10px 36px;
+    padding: ${props => props.theme.spacing(2.5)} ${props => props.theme.spacing(9)};
     
-    border-right: 1px solid rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    // background-color: rgb(199, 199, 199); 
+    border-right: 1px solid ${props => props.theme.colors.black};
+    border-bottom: 2px solid ${props => props.theme.colors.black};
 
     background-color: ${({ friendIsOnline, theme }) => {
         switch (friendIsOnline) {
@@ -53,7 +52,7 @@ export const Item = styled.li`
             case 'Off':
                 return theme.colors.backgroundOfflineColor;
             default:
-                return theme.colors.backgroundOfflineColor;
+                return theme.colors.backgroundDefaultColor;
         }
     }
     };
@@ -61,13 +60,11 @@ export const Item = styled.li`
 
 
 export const Status = styled.span`
-    margin-right: 15px;
+    margin-right: ${props => props.theme.spacing(4)};
 
-    font-size: 14px;
-    line-height: 32px;
+    font-size: ${props => props.theme.spacing(4)};
+    line-height: ${props => props.theme.spacing(8)};
     letter-spacing: 0.5px;
-
-    // color: rgb(255, 50, 0);
 
     color: ${({ friendIsOnline, theme }) => {
         switch (friendIsOnline) {
@@ -82,12 +79,13 @@ export const Status = styled.span`
     };
 `;
 
+
 export const Avatar = styled.img`
-    border: 1px solid rgb(61, 61, 61);
-    padding: 15px;
+    border: 1px solid ${props => props.theme.colors.borderCardColor};
+    padding: ${props => props.theme.spacing(4)};
     border-radius: 50%;
     background-color: rgb(205, 232, 255);
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};
 `;
 
 
