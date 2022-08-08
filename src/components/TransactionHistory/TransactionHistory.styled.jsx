@@ -10,7 +10,7 @@ export const TransactionsHistory = styled.section`
     margin-right: ${props => props.theme.spacing(5)};
 
     border: ${props => `2px solid ${props.theme.colors.borderCardColor}`};
-    border-radius: ${props => props.theme.spacing(10)};
+    border-radius: ${props => props.theme.spacing(5)};
     box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};
 
     background-color: ${props => props.theme.colors.backgroundCardColor};
