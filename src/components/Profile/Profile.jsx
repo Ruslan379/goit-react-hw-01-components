@@ -36,7 +36,7 @@ export function Profile(props) {
         />
         <p className={css.name}><FaUserAlt className={css.icon} size={iconSize.sm} />{username}</p>
         <p className={css.tag}><MdOutlineAlternateEmail  className={css.icon} size={iconSize.md} />{tag}</p>
-        <p className={css.location}><FaMapMarkerAlt className={css.icon} size={iconSize.sm}/>{location}</p>
+        <p className={css.location}><FaMapMarkerAlt className={css.icon} size={iconSize.sm} />{location}</p>
       </div>
 
       

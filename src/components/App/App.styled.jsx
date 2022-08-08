@@ -1,15 +1,5 @@
 import styled from '@emotion/styled';
 
-
-
-
-
-
-
-
-
-
-// export const Container = styled.div`
-//   padding: 24px;
-//   background-color: green;
-// `;
+export const Container = styled.div`
+  display: flex;
+`;

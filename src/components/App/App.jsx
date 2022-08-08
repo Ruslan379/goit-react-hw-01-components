@@ -1,39 +1,46 @@
-import user from '../../user.json'
-import data from '../../data.json'
-import friends from '../../friends.json'
-import transactions from '../../transactions.json'
+// import user from '../../user.json' //? OLD, before creating the file jsconfig.json
+import user from 'user.json'
+import data from 'data.json'
+import friends from 'friends.json'
+import transactions from 'transactions.json'
 
-import { Profile } from '../Profile/Profile';
-import { Statistics } from '../Statistics/Statistics';
-import { FriendList } from '../FriendList/FriendList';
-import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
+// import { Profile } from '../Profile/Profile'; //? OLD, before creating the file jsconfig.json
+import { Profile } from 'components/Profile/Profile.jsx';
+import { Statistics } from 'components/Statistics/Statistics';
+import { FriendList } from 'components/FriendList/FriendList';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
-import css from './App.module.css'
+// import css from './App.module.css' //? OLD, before creating the file jsconfig.json
+import css from 'components/App/App.module.css' //! старый вариант импорта стилей
+// import { Container } from './App.styled'; //? OLD, before creating the file jsconfig.json
+import { Container } from 'components/App/App.styled'; //! НОВЫЙ вариант импорта стилей
 
-// import { Container } from './App.styled';
+
 
 
 //! +++++++++++++++++++++++++++++++++++++
 export function App() {
   return (
-    <div className={css.app}>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
-      />
+    <Container>
+      <div className={css.app}>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          followers={user.stats.followers}
+          views={user.stats.views}
+          likes={user.stats.likes}
+        />
 
-      <Statistics title="Upload stats" stats={data} />
-      
-      <FriendList title="FRIEND LIST" friends={friends} />
+        <Statistics title="Upload stats" stats={data} />
 
-      <TransactionHistory title="TRANSACTION HISTORY" items={transactions} />
+        <FriendList title="FRIEND LIST" friends={friends} />
 
-    </div>
+        <TransactionHistory title="TRANSACTION HISTORY" items={transactions} />
+
+      </div>
+    </Container>
   );
 };
 
