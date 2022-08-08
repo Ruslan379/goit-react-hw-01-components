@@ -80,7 +80,48 @@ export const Location = styled.p`
   }
 `;
 
+export const Stats = styled.ul`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0;
+    /* width: 300px; */
 
+    list-style-type: none;
+    text-align: center; 
 
+    border: 1px solid rgb(0, 0, 0);
+    border-right: 3px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+`;
 
+export const Item = styled.ul`
+    /* display: block; */
+    padding: 20px;
 
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: rgb(199, 199, 199);
+`;
+
+export const Label = styled.span`
+    display: block;
+    margin-top: 0;
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    color: rgb(0, 56, 0);
+`;
+
+export const Quantity = styled.span`
+    /* display: block;
+    text-align: center; */
+    font-style: italic;
+
+    color: rgb(138, 0, 0);
+`;

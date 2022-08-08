@@ -11,7 +11,7 @@ import { iconSize } from 'constants';
 import defaultImage from 'components/default.jpg'; 
 
 // import css from './Profile.module.css' //? OLD, before creating the file jsconfig.json
-import css from 'components/Profile/Profile.module.css' //todo = старый вариант импорта стилей
+// import css from 'components/Profile/Profile.module.css' //todo = старый вариант импорта стилей
 //! НОВЫЙ вариант импорта стилей
 import { Profiles } from 'components/Profile/Profile.styled'; 
 import { Description } from 'components/Profile/Profile.styled'; 
@@ -19,6 +19,10 @@ import { Avatar } from 'components/Profile/Profile.styled';
 import { Name } from 'components/Profile/Profile.styled';
 import { Tag } from 'components/Profile/Profile.styled';
 import { Location } from 'components/Profile/Profile.styled';
+import { Stats } from 'components/Profile/Profile.styled';
+import { Item } from 'components/Profile/Profile.styled';
+import { Label } from 'components/Profile/Profile.styled';
+import { Quantity } from 'components/Profile/Profile.styled';
 
 
 
@@ -58,26 +62,46 @@ export function Profile(props) {
         </Location>
       </Description>
 
-      
-      <ul className={css.stats}>
-        <li className={css.item}>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
-      </ul>
+      <Stats>
+        <Item>
+          <Label>
+            Followers
+          </Label>
+          <Quantity>
+            {followers}
+          </Quantity>
+        </Item>
+        <Item>
+          <Label>
+            Views
+          </Label>
+          <Quantity>
+            {views}
+          </Quantity>
+        </Item>
+        <Item>
+          <Label>
+            Likes
+          </Label>
+          <Quantity>
+            {likes}
+          </Quantity>
+        </Item>
+      </Stats>
     </Profiles>
   );
 };
 
 
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
 
 //todo  ---- старый вариант импорта стилей c Profile.module.css ----------
 // export function Profile(props) {
@@ -108,16 +132,16 @@ export function Profile(props) {
       
 //       <ul className={css.stats}>
 //         <li className={css.item}>
-//           <span className={css.label}>Followers</span>
-//           <span className={css.quantity}>{followers}</span>
+//           <Label>Followers</Label>
+//           <Quantity>{followers}</Quantity>
 //         </li>
 //         <li className={css.item}>
-//           <span className={css.label}>Views</span>
-//           <span className={css.quantity}>{views}</span>
+//           <Label>Views</Label>
+//           <Quantity>{views}</Quantity>
 //         </li>
 //         <li className={css.item}>
-//           <span className={css.label}>Likes</span>
-//           <span className={css.quantity}>{likes}</span>
+//           <Label>Likes</Label>
+//           <Quantity>{likes}</Quantity>
 //         </li>
 //       </ul>
 //     </div>
@@ -127,12 +151,3 @@ export function Profile(props) {
 
 
 
-Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
-};
