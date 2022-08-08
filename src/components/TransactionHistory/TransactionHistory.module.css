@@ -1,4 +1,4 @@
-.transactionHistory {
+.transactionsHistory {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,17 +14,28 @@
     background-color: rgb(254, 255, 221);
 }
 
-table caption {
-    /* text-align: left; */
-    text-align: center;
 
+.itemHistory {
+    border-collapse: collapse;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
 }
+
+
+/* table caption {
+    text-align: left;
+    text-align: center;
+} */
+
 
 /* We "collapse" the frames of adjacent cells */
-table {
+/* table {
     border-collapse: collapse;
     
-}
+} */
+
 
 /* 
     Add a border and padding to the cells, the distance from the content to the border.
@@ -32,12 +43,12 @@ table {
 */
 
 
-
 table th {
     padding: 5px;
     border: 1px solid #2a2a2a;
     background-color: rgb(205, 232, 255);
 }
+
 
 table td {
     padding: 5px;
@@ -47,10 +58,4 @@ table td {
 
 
 
-.itemHistory {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 12px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
-    
-}
+
