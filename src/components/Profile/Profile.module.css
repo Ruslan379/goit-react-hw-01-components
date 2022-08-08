@@ -8,11 +8,11 @@
     margin-right: 20px;
     margin-left: 20px;
 
-    border: 2px solid rgb(61, 61, 61);
+    border: 2px solid #3d3d3d;
     border-radius: 20px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 14px -3px #0000006e;
 
-    background-color: rgb(254, 255, 221);
+    background-color: #feffdd;
 }
 
 
@@ -22,11 +22,11 @@
 
 
 .avatar {
-    border: 1px solid rgb(61, 61, 61);
+    border: 1px solid #3d3d3d;
     padding: 15px;
     border-radius: 50%;
-    background-color: rgb(205, 232, 255);
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    background-color: #cde8ff;
+    box-shadow: 10px 10px 14px -3px #0000006e;
 }
 
 
@@ -47,7 +47,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
     
-    color: blue;
+    color: #0000ff;
 }
 
 
@@ -59,7 +59,7 @@
     font-weight: 700;
     letter-spacing: 0.5px;
 
-    color: rgb(90, 0, 0);
+    color: #5a0000;
 }
 
 
@@ -84,9 +84,10 @@
     /* display: block; */
     padding: 20px;
 
-    border-right: 1px solid rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: rgb(199, 199, 199);
+    border-right: 1px solid #000000;
+    border-bottom: 2px solid #000000;
+    
+    background-color: #c7c7c7;
 }
 
 
@@ -100,7 +101,7 @@
     font-weight: 700;
     letter-spacing: 0.5px;
 
-    color: rgb(0, 56, 0);
+    color: #003800;
 }
 
 .quantity {
@@ -108,12 +109,12 @@
     text-align: center; */
     font-style: italic;
 
-    color: rgb(138, 0, 0);
+    color: #8a0000;
 }
 
 .icon {
     /* display: inline-flex; */
-    margin-right: 8px;
+    margin-right: 12px;
     /* size: 60px; */
-    color: rgb(97, 97, 97);
+    color: #616161;
 }

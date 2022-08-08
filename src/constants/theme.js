@@ -4,11 +4,15 @@ export const theme = Object.freeze({
     black: '#000000',
     statisticsPercentage: '#ffe8c5',
 
-    green: '#4caf50',
-    red: '#f44336',
-    blue: '#2196f3',
+    greenLabel: '#003800',
+    redLocation: '#5a0000',
+    redQuantity: '#8a0000',
+    blueTag: '#0000ff',
+
     primaryText: '#212121',
     secondaryText: '#757575',
+
+    iconColor: '#616161',
 
 
 
@@ -29,7 +33,6 @@ export const theme = Object.freeze({
     // backgroundDefaultStatusColor: "#000000",
 
     backgroundColorItem: '#c7c7c7',
-
 
   },
   spacing: value => `${4 * value}px`,
