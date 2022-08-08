@@ -13,16 +13,18 @@ import defaultImage from 'components/default.jpg';
 // import css from './Profile.module.css' //? OLD, before creating the file jsconfig.json
 // import css from 'components/Profile/Profile.module.css' //todo = старый вариант импорта стилей
 //! НОВЫЙ вариант импорта стилей
-import { Profiles } from 'components/Profile/Profile.styled'; 
-import { Description } from 'components/Profile/Profile.styled'; 
-import { Avatar } from 'components/Profile/Profile.styled';
-import { Name } from 'components/Profile/Profile.styled';
-import { Tag } from 'components/Profile/Profile.styled';
-import { Location } from 'components/Profile/Profile.styled';
-import { Stats } from 'components/Profile/Profile.styled';
-import { Item } from 'components/Profile/Profile.styled';
-import { Label } from 'components/Profile/Profile.styled';
-import { Quantity } from 'components/Profile/Profile.styled';
+import { Profiles, Description, Avatar, Name, Tag, Location, Stats, Item, Label, Quantity } from 'components/Profile/Profile.styled';
+
+// import { Profiles } from 'components/Profile/Profile.styled'; 
+// import { Description } from 'components/Profile/Profile.styled'; 
+// import { Avatar } from 'components/Profile/Profile.styled';
+// import { Name } from 'components/Profile/Profile.styled';
+// import { Tag } from 'components/Profile/Profile.styled';
+// import { Location } from 'components/Profile/Profile.styled';
+// import { Stats } from 'components/Profile/Profile.styled';
+// import { Item } from 'components/Profile/Profile.styled';
+// import { Label } from 'components/Profile/Profile.styled';
+// import { Quantity } from 'components/Profile/Profile.styled';
 
 
 

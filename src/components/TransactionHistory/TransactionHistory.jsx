@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 // import css from './TransactionHistory.module.css' //? OLD, before creating the file jsconfig.json
 // import css from 'components/TransactionHistory/TransactionHistory.module.css' //todo = старый вариант импорта стилей
 //! НОВЫЙ вариант импорта стилей
-import { TransactionsHistory } from 'components/TransactionHistory/TransactionHistory.styled'; 
-import { ItemHistory } from 'components/TransactionHistory/TransactionHistory.styled'; 
-import { TableTh } from 'components/TransactionHistory/TransactionHistory.styled'; 
-import { TableTd } from 'components/TransactionHistory/TransactionHistory.styled'; 
+import { TransactionsHistory, ItemHistory, TableTh, TableTd } from 'components/TransactionHistory/TransactionHistory.styled'; 
+
+// import { TransactionsHistory } from 'components/TransactionHistory/TransactionHistory.styled'; 
+// import { ItemHistory } from 'components/TransactionHistory/TransactionHistory.styled'; 
+// import { TableTh } from 'components/TransactionHistory/TransactionHistory.styled'; 
+// import { TableTd } from 'components/TransactionHistory/TransactionHistory.styled'; 
 
 
 

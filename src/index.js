@@ -2,6 +2,9 @@ import React from 'react';
 // import ReactDOM from 'react-dom'; //! TEMP
 import ReactDOM from 'react-dom/client'; //! Нужен ОБЯЗАТЕЛЬНО!
 
+import { ThemeProvider } from '@emotion/react';
+import { theme } from 'constants';
+
 import './index.css';
 
 // import { App } from 'components/App'; //? old path
@@ -12,7 +15,9 @@ import { App } from 'components/App/App';
 //! Нужен ОБЯЗАТЕЛЬНО!
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

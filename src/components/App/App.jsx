@@ -6,9 +6,9 @@ import transactions from 'transactions.json'
 
 // import { Profile } from '../Profile/Profile'; //? OLD, before creating the file jsconfig.json
 import { Profile } from 'components/Profile/Profile.jsx';
-import { Statistics } from 'components/Statistics/Statistics';
-import { FriendList } from 'components/FriendList/FriendList';
-import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
+import { Statistics } from 'components/Statistics/Statistics.jsx';
+import { FriendList } from 'components/FriendList/FriendList.jsx';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory.jsx';
 
 // import css from './App.module.css' //? OLD, before creating the file jsconfig.json
 // import css from 'components/App/App.module.css' //todo = старый вариант импорта стилей

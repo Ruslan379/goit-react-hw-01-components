@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 // import css from './FriendList.module.css' //? OLD, before creating the file jsconfig.json
 // import css from 'components/FriendList/FriendList.module.css' //todo = старый вариант импорта стилей
 //! НОВЫЙ вариант импорта стилей
-import { FriendsList } from 'components/FriendList/FriendList.styled'; 
-import { StatList } from 'components/FriendList/FriendList.styled'; 
-import { Item } from 'components/FriendList/FriendList.styled'; 
-import { Status } from 'components/FriendList/FriendList.styled'; 
-import { Avatar } from 'components/FriendList/FriendList.styled';
-import { Name } from 'components/FriendList/FriendList.styled';
+import { FriendsList, StatList, Item, Status, Avatar, Name } from 'components/FriendList/FriendList.styled';
+
+// import { FriendsList } from 'components/FriendList/FriendList.styled'; 
+// import { StatList } from 'components/FriendList/FriendList.styled'; 
+// import { Item } from 'components/FriendList/FriendList.styled'; 
+// import { Status } from 'components/FriendList/FriendList.styled'; 
+// import { Avatar } from 'components/FriendList/FriendList.styled';
+// import { Name } from 'components/FriendList/FriendList.styled';
 
 
 
