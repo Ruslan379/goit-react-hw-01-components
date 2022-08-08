@@ -83,7 +83,7 @@ export const Location = styled.p`
 export const Stats = styled.ul`
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 0;
     /* width: 300px; */
 
@@ -96,7 +96,7 @@ export const Stats = styled.ul`
     box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
 `;
 
-export const Item = styled.ul`
+export const Item = styled.li`
     /* display: block; */
     padding: 20px;
 

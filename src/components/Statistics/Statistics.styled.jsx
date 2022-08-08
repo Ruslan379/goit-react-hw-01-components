@@ -25,7 +25,7 @@ export const StatList = styled.ul`
     padding: 0;
     /* width: 300px; */
 
-    margin-top: 429px;
+    margin-top: 440px;
 
     list-style-type: none;
     text-align: center; 

@@ -24,7 +24,7 @@ export const theme = Object.freeze({
 
     backgroundOnlineStatusColor: "#fff000",
     backgroundOfflineStatusColor: "#38c500",
-    backgroundDefaultStatusColor: "#000000",
+    // backgroundDefaultStatusColor: "#000000",
 
     backgroundColorItem: '#c7c7c7',
 

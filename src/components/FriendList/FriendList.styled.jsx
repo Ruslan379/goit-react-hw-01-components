@@ -73,7 +73,7 @@ export const Status = styled.span`
             case false:
                 return theme.colors.backgroundOfflineStatusColor;
             default:
-                return theme.colors.backgroundDefaultStatusColor;
+                return theme.colors.black;
         }
     }
     };
@@ -90,14 +90,13 @@ export const Avatar = styled.img`
 
 
 export const Name = styled.p`
-    margin-left: 28px;
+    margin-left: ${props => props.theme.spacing(7)};
 
-    font-size: 24px;
-    line-height: 24px;
+    font-size: ${props => props.theme.spacing(6)};
+    line-height: ${props => props.theme.spacing(6)};
     font-weight: 700;
     letter-spacing: 0.5px;
 
-    // color: rgb(255, 240, 0);
     color: ${({ friendIsOnline, theme  }) => {
         switch (friendIsOnline) {
             case true:
@@ -105,7 +104,7 @@ export const Name = styled.p`
             case false:
                 return theme.colors.backgroundOfflineStatusColor;
             default:
-                return theme.colors.backgroundDefaultStatusColor;
+                return theme.colors.black;
         }
     }
     };
