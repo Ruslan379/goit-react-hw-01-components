@@ -5,17 +5,17 @@ export const FriendsList = styled.section`
     flex-direction: column;
     align-items: center;
 
-    width: 300px;
-    padding: 40px;
-    margin-right: 20px;
+    width: ${props => props.theme.spacing(75)};
+    padding: ${props => props.theme.spacing(10)};
+    margin-right: ${props => props.theme.spacing(5)};
 
     /* text-transform: uppercase; */
 
-    border: 2px solid rgb(61, 61, 61);
+    border: ${props => `2px solid ${props.theme.colors.borderCardColor}`};
+    border-radius: ${props => props.theme.spacing(10)};
+    box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};
 
-    border-radius: 20px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
-    background-color: rgb(254, 255, 221);
+    background-color: ${props => props.theme.colors.backgroundCardColor};
 `;
 
 
@@ -46,14 +46,14 @@ export const Item = styled.li`
     border-bottom: 2px solid rgb(0, 0, 0);
     // background-color: rgb(199, 199, 199); 
 
-    background-color: ${({ friendIsOnline }) => {
+    background-color: ${({ friendIsOnline, theme }) => {
         switch (friendIsOnline) {
             case 'On':
-                return "#009100";
+                return theme.colors.backgroundOnlineColor;
             case 'Off':
-                return "#b30000";
+                return theme.colors.backgroundOfflineColor;
             default:
-                return "#c7c7c7";
+                return theme.colors.backgroundOfflineColor;
         }
     }
     };
@@ -69,14 +69,14 @@ export const Status = styled.span`
 
     // color: rgb(255, 50, 0);
 
-    color: ${({ friendIsOnline }) => {
+    color: ${({ friendIsOnline, theme }) => {
         switch (friendIsOnline) {
             case true:
-                return "#fff000";
+                return theme.colors.backgroundOnlineStatusColor;
             case false:
-                return "#38c500";
+                return theme.colors.backgroundOfflineStatusColor;
             default:
-                return "#000000";
+                return theme.colors.backgroundDefaultStatusColor;
         }
     }
     };
@@ -100,14 +100,14 @@ export const Name = styled.p`
     letter-spacing: 0.5px;
 
     // color: rgb(255, 240, 0);
-    color: ${({ friendIsOnline }) => {
+    color: ${({ friendIsOnline, theme  }) => {
         switch (friendIsOnline) {
             case true:
-                return "#fff000";
+                return theme.colors.backgroundOnlineStatusColor;
             case false:
-                return "#38c500";
+                return theme.colors.backgroundOfflineStatusColor;
             default:
-                return "#000000";
+                return theme.colors.backgroundDefaultStatusColor;
         }
     }
     };

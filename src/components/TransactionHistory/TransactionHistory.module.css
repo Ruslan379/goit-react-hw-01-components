@@ -7,11 +7,11 @@
     padding: 40px;
     margin-right: 20px;
 
-    border: 2px solid rgb(61, 61, 61);
+    border: 2px solid #3d3d3d;
     border-radius: 20px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 14px -3px #0000006e;
 
-    background-color: rgb(254, 255, 221);
+    background-color: #feffdd;
 }
 
 
@@ -20,7 +20,7 @@
     text-transform: capitalize;
     text-align: center;
     font-size: 12px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 14px -3px #0000006e;
 }
 
 
@@ -44,16 +44,16 @@
 
 
 table th {
-    padding: 5px;
+    padding: 8px;
     border: 1px solid #2a2a2a;
-    background-color: rgb(205, 232, 255);
+    background-color: #cde8ff;
 }
 
 
 table td {
-    padding: 5px;
+    padding: 4px;
     border: 1px solid #2a2a2a;
-    background-color: rgb(250, 250, 235);
+    background-color: #fafaeb;
 }
 
 

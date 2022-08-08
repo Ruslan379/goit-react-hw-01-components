@@ -9,11 +9,11 @@
 
     /* text-transform: uppercase; */
 
-    border: 2px solid rgb(61, 61, 61);
+    border: 2px solid #3d3d3d;
 
     border-radius: 20px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
-    background-color: rgb(254, 255, 221);
+    box-shadow: 10px 10px 14px -3px #0000006e;
+    background-color: #feffdd;
 }
 
 
@@ -27,10 +27,10 @@
     list-style-type: none;
     text-align: center; 
 
-    border: 1px solid rgb(0, 0, 0);
-    border-right: 2px solid rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-right: 2px solid #000000;
     border-radius: 2px;
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 14px -3px #0000006e;
 }
 
 
@@ -40,8 +40,8 @@
 
     padding: 10px 36px;
     
-    border-right: 1px solid rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-right: 1px solid #000000;
+    border-bottom: 2px solid #000000;
     background-color: #c7c7c7;
 }
 
@@ -53,16 +53,16 @@
     line-height: 32px;
     letter-spacing: 0.5px;
 
-    color: rgb(255, 50, 0);
+    color: #ff3200;
 }
 
 
 .avatar {
-    border: 1px solid rgb(61, 61, 61);
+    border: 1px solid #3d3d3d;
     padding: 15px;
     border-radius: 50%;
-    background-color: rgb(205, 232, 255);
-    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    background-color: #cde8ff;
+    box-shadow: 10px 10px 14px -3px #0000006e;
 }
 
 

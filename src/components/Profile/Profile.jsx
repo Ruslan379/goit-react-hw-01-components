@@ -103,6 +103,9 @@ Profile.propTypes = {
   likes: PropTypes.number.isRequired,
 };
 
+
+
+
 //todo  ---- старый вариант импорта стилей c Profile.module.css ----------
 // export function Profile(props) {
 //   // console.log(props); //!
