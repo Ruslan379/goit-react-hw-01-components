@@ -20,11 +20,11 @@ export function FriendList({ title, friends = [] }) {
 
         <StatList>
             {friends.map(friend => (
-                <Item
+                <Item friendIsOnline={friend.isOnline}
                     key={friend.id} 
-                    style={{ сolor: (friend.isOnline ? "#b30000" : "#009100"), backgroundColor: (friend.isOnline ? "#009100" : "#b30000") }}
+                    // style={{ сolor: (friend.isOnline ? "" : "#009100"), backgroundColor: (friend.isOnline ? "#009100" : "#b30000") }}
                 >
-                    <Status
+                    <Status friendIsOnlineStatus={friend.isOnline}
                         style={{ сolor: (friend.isOnline ? "#b30000" : "#009100") }}
                     >
                         {friend.isOnline ? 'On' : 'Off'}
@@ -34,8 +34,8 @@ export function FriendList({ title, friends = [] }) {
                         alt="User avatar"
                         width="48"
                     />
-                    <Name
-                        style={{ сolor: (friend.isOnline ? "#b30000" : "#009100") }}
+                    <Name friendIsOnlineName={friend.isOnline}
+                        // style={{ сolor: (friend.isOnline ? "#b30000" : "#009100") }}
                     >
                         {friend.name}
                     </Name>

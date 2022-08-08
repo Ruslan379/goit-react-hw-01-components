@@ -44,10 +44,17 @@ export const Item = styled.li`
     
     border-right: 1px solid rgb(0, 0, 0);
     border-bottom: 2px solid rgb(0, 0, 0);
-    /* background-color: rgb(199, 199, 199); */
+    // background-color: rgb(199, 199, 199); 
 
-
-
+    background-color: ${({ friendIsOnline }) => {
+        switch (friendIsOnline) {
+            case true:
+                return "#009100";
+            case false:
+                return "#b30000";
+        }
+    }
+    };
 `;
 
 
@@ -58,7 +65,17 @@ export const Status = styled.span`
     line-height: 32px;
     letter-spacing: 0.5px;
 
-    color: rgb(255, 50, 0);
+    // color: rgb(255, 50, 0);
+
+    color: ${({ friendIsOnlineStatus }) => {
+        switch (friendIsOnlineStatus) {
+            case true:
+                return "#fff000";
+            case false:
+                return "#38c500";
+        }
+    }
+    };
 `;
 
 export const Avatar = styled.img`
@@ -78,5 +95,14 @@ export const Name = styled.p`
     font-weight: 700;
     letter-spacing: 0.5px;
 
-    color: rgb(255, 240, 0);
+    // color: rgb(255, 240, 0);
+    color: ${({ friendIsOnlineName }) => {
+        switch (friendIsOnlineName) {
+            case true:
+                return "#fff000";
+            case false:
+                return "#38c500";
+        }
+    }
+    };
 `;
