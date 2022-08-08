@@ -34,8 +34,10 @@ export function Statistics({ title, stats = [] }) {
             <StatList>
                 {stats.map(stat => (
                     <Item
+                        randomColor={getRandomHexColor()}
                         key={stat.id}
-                        style={{ color: getRandomHexColor(), backgroundColor: getRandomHexColor() }}>
+                        // style={{ color: getRandomHexColor(), backgroundColor: getRandomHexColor() }}
+                    >
                         <Label>
                             {stat.label}
                         </Label>

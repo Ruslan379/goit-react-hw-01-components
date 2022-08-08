@@ -44,7 +44,10 @@ export const Item = styled.li`
 
     border-right: 1px solid rgb(0, 0, 0);
     border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: rgb(199, 199, 199);
+    // background-color: rgb(199, 199, 199);
+
+    background-color: ${props => props.randomColor};
+    }
 `;
 
 
