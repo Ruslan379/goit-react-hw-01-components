@@ -84,7 +84,7 @@ export const Avatar = styled.img`
     border: 1px solid ${props => props.theme.colors.borderCardColor};
     padding: ${props => props.theme.spacing(4)};
     border-radius: 50%;
-    background-color: rgb(205, 232, 255);
+    background-color: ${props => props.theme.colors.backgroundNameColor};
     box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};
 `;
 
