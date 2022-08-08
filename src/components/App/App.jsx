@@ -11,7 +11,7 @@ import { FriendList } from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
 // import css from './App.module.css' //? OLD, before creating the file jsconfig.json
-import css from 'components/App/App.module.css' //todo = старый вариант импорта стилей
+// import css from 'components/App/App.module.css' //todo = старый вариант импорта стилей
 // import { Container } from './App.styled'; //? OLD, before creating the file jsconfig.json
 import { Container } from 'components/App/App.styled'; //! НОВЫЙ вариант импорта стилей
 
