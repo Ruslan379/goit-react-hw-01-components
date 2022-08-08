@@ -16,6 +16,9 @@ import css from 'components/Profile/Profile.module.css' //todo = старый в
 import { Profiles } from 'components/Profile/Profile.styled'; 
 import { Description } from 'components/Profile/Profile.styled'; 
 import { Avatar } from 'components/Profile/Profile.styled';
+import { Name } from 'components/Profile/Profile.styled';
+import { Tag } from 'components/Profile/Profile.styled';
+import { Location } from 'components/Profile/Profile.styled';
 
 
 
@@ -36,16 +39,23 @@ export function Profile(props) {
   return (
     <Profiles>
       <Description>
-        <Avatar>
-          <img
+        <Avatar
             src={avatar}
             alt="User avatar"
             width="240"
-          />
-        </Avatar>
-        <p className={css.name}><FaUserAlt className={css.icon} size={iconSize.sm} />{username}</p>
-        <p className={css.tag}><MdOutlineAlternateEmail  className={css.icon} size={iconSize.md} />{tag}</p>
-        <p className={css.location}><FaMapMarkerAlt className={css.icon} size={iconSize.sm} />{location}</p>
+        />
+        <Name>
+          <FaUserAlt size={iconSize.sm} />
+          {username}
+        </Name>
+        <Tag>
+          <MdOutlineAlternateEmail size={iconSize.md} />
+          {tag}
+        </Tag>
+        <Location>
+          <FaMapMarkerAlt size={iconSize.sm} />
+          {location}
+        </Location>
       </Description>
 
       

@@ -22,10 +22,65 @@ export const Description = styled.div`
     text-align: center;
 `;
 
-export const Avatar = styled.div`
+
+export const Avatar = styled.img`
     border: 1px solid rgb(61, 61, 61);
-        padding: 15px;
-        border-radius: 30%;
-        background-color: rgb(205, 232, 255);
-        box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(205, 232, 255);
+    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
 `;
+
+
+export const Name = styled.p`
+    margin-top: 32px;
+    font-size: 32px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    /* text-transform: uppercase; */
+
+
+    svg {
+      margin-right: 8px;
+      color: rgb(97, 97, 97);
+  }
+`;
+
+
+export const Tag = styled.p`
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    
+    color: blue;
+
+    svg {
+      margin-right: 8px;
+      color: rgb(97, 97, 97);
+  }
+`;
+
+
+export const Location = styled.p`
+    margin-top: 24px;
+
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    color: rgb(90, 0, 0);
+
+    svg {
+      margin-right: 8px;
+      color: rgb(97, 97, 97);
+  }
+`;
+
+
+
+
+

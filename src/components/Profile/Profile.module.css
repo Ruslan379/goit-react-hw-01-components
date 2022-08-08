@@ -23,10 +23,10 @@
 
 .avatar {
     border: 1px solid rgb(61, 61, 61);
-        padding: 15px;
-        border-radius: 50%;
-        background-color: rgb(205, 232, 255);
-        box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(205, 232, 255);
+    box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.43);
 }
 
 
@@ -61,6 +61,7 @@
 
     color: rgb(90, 0, 0);
 }
+
 
 .stats {
     display: flex;
