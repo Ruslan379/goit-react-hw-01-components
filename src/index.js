@@ -7,7 +7,6 @@ import { theme } from 'constants';
 
 import './index.css';
 
-// import { App } from 'components/App'; //? old path
 import { App } from 'components/App/App';
 
 
@@ -21,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>
 );
 
-//! +++++++++++++++++++++++++++++++++++++++++++
+
 //! TEMP
 // ReactDOM.render(<App />, document.querySelector("#root"));
 

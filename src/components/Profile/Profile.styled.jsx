@@ -41,9 +41,9 @@ export const Name = styled.p`
     letter-spacing: 0.5px;
 
     svg {
-      margin-right: ${props => props.theme.spacing(3)};
-      color: ${props => props.theme.colors.iconColor};
-  }
+        margin-right: ${props => props.theme.spacing(3)};
+        color: ${props => props.theme.colors.iconColor};
+    }
 `;
 
 
@@ -57,9 +57,9 @@ export const Tag = styled.p`
     color: ${props => props.theme.colors.blueTag};
 
     svg {
-      margin-right: ${props => props.theme.spacing(2)};
-      color: ${props => props.theme.colors.iconColor};
-  }
+        margin-right: ${props => props.theme.spacing(2)};
+        color: ${props => props.theme.colors.iconColor};
+    }
 `;
 
 
@@ -74,9 +74,9 @@ export const Location = styled.p`
     color: ${props => props.theme.colors.redLocation};
 
     svg {
-      margin-right: ${props => props.theme.spacing(2)};
-      color: ${props => props.theme.colors.iconColor};
-  }
+        margin-right: ${props => props.theme.spacing(2)};
+        color: ${props => props.theme.colors.iconColor};
+    }
 `;
 
 
