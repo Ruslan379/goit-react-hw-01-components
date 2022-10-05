@@ -23,8 +23,7 @@ import {
 
 
 
-export function Profile(props) {
-  const {
+export function Profile({
     avatar = defaultImage,
     username = "не известно",
     tag,
@@ -32,7 +31,18 @@ export function Profile(props) {
     followers,
     views,
     likes
-  } = props
+  }) {
+  
+  // const {
+  //   avatar = defaultImage,
+  //   username = "не известно",
+  //   tag,
+  //   location,
+  //   followers,
+  //   views,
+  //   likes
+  // } = props;
+
   return (
     <Profiles>
       <Description>
