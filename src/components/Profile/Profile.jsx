@@ -21,8 +21,19 @@ import {
 } from 'components/Profile/Profile.styled';
 
 
+//! 1-й ВАРИАНТ: Передача пропсов без дестуктуризации:
+// export function Profile(props) {
+// const {
+//   avatar = defaultImage,
+//   username = "не известно",
+//   tag,
+//   location,
+//   followers,
+//   views,
+//   likes
+// } = props;
 
-
+//! 2-й ВАРИАНТ: Передача пропсов с дестуктуризацией:
 export function Profile({
     avatar = defaultImage,
     username = "не известно",
@@ -31,17 +42,21 @@ export function Profile({
     followers,
     views,
     likes
-  }) {
-  
-  // const {
-  //   avatar = defaultImage,
-  //   username = "не известно",
-  //   tag,
-  //   location,
-  //   followers,
-  //   views,
-  //   likes
-  // } = props;
+}) {
+
+
+//! 3-й ВАРИАНТ: Передача пропсов одним объектом с дестуктуризацией:
+// export function Profile({ userArr: {
+//   avatar = defaultImage,
+//   username = "не известно",
+//   tag,
+//   location,
+//   followers,
+//   views,
+//   likes
+//   }
+// }) {
+
 
   return (
     <Profiles>
@@ -96,6 +111,8 @@ export function Profile({
 };
 
 
+
+//! 1-й и 2-й ВАРИАНТ:
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
@@ -105,3 +122,10 @@ Profile.propTypes = {
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
 };
+
+
+//! 3-й ВАРИАНТ:
+// Profile.propTypes = {
+//   userArr: PropTypes.object.isRequired,
+// };
+

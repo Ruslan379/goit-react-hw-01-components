@@ -15,6 +15,7 @@ import { Container } from 'components/App/App.styled';
 
 
 export default function App() {
+  //! 2-й ВАРИАНТ: Передача пропсов с дестуктуризацией:
   const {
     username,
     tag,
@@ -29,6 +30,7 @@ export default function App() {
   return (
     <Container>
       <Profile
+        //! 1-й ВАРИАНТ: Передача пропсов без дестуктуризации:
         // username={user.username}
         // tag={user.tag}
         // location={user.location}
@@ -36,6 +38,8 @@ export default function App() {
         // followers={user.stats.followers}
         // views={user.stats.views}
         // likes={user.stats.likes}
+
+        //! 2-й ВАРИАНТ: Передача пропсов с дестуктуризацией:
         username={username}
         tag={tag}
         location={location}
@@ -43,6 +47,9 @@ export default function App() {
         followers={followers}
         views={views}
         likes={likes}
+
+        //! 3-й ВАРИАНТ: Передача пропсов одним объектом:
+        // userArr={user}
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList title="FRIEND LIST" friends={friends} />
