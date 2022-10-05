@@ -14,7 +14,7 @@ import { Container } from 'components/App/App.styled';
 
 
 
-export function App() {
+export default function App() {
   const {
     username,
     tag,
