@@ -25,6 +25,7 @@ export const StatList = styled.ul`
     justify-content: space-between;
 
     padding: 0;
+    margin-top: ${props => props.theme.spacing(5.25)};
 
     list-style-type: none;
     text-align: center; 
