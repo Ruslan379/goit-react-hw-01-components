@@ -7,29 +7,29 @@ import {
     Status,
     Avatar,
     Name
-} from 'components/FriendList/FriendList.styled';
+} from 'components/FriendListItem/FriendListItem.styled';
 
 
-export function FriendListItem({ friend }) {
+export function FriendListItem({ avatar, name, isOnline }) {
     return (
         // <FriendsList>
         //     {title && <h2>{title}</h2>}
         // <StatList>
         //     {friends.map(friend => (
                 <Item
-                    friendIsOnline={friend.isOnline ? 'On' : 'Off'}
+                    friendIsOnline={isOnline ? 'On' : 'Off'}
                     // key={friend.id} 
                 >
-                    <Status friendIsOnline={friend.isOnline}>
-                        {friend.isOnline ? 'On' : 'Off'}
+                    <Status friendIsOnline={isOnline}>
+                        {isOnline ? 'On' : 'Off'}
                     </Status>
                     <Avatar
-                        src={friend.avatar}
-                        alt="User avatar"
+                        src={avatar}
+                        alt={name}
                         width="48"
                     />
-                    <Name friendIsOnline={friend.isOnline}>
-                        {friend.name}
+                    <Name friendIsOnline={isOnline}>
+                        {name}
                     </Name>
                 </Item>
             // ))}
@@ -41,14 +41,8 @@ export function FriendListItem({ friend }) {
 
 
 FriendListItem.propTypes = {
-    friends: PropTypes.arrayOf(
-        PropTypes.exact({
-            id: PropTypes.number.isRequired,
-            avatar: PropTypes.string.isRequired,
-            name: PropTypes.string.isRequired,
-            isOnline: PropTypes.bool.isRequired,
-        }),
-    ),
-    title: PropTypes.string
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
 };
 

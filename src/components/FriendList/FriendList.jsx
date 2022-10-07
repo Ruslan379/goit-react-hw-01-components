@@ -4,10 +4,10 @@ import { FriendListItem } from 'components/FriendListItem/FriendListItem.jsx';
 import {
     FriendsList,
     StatList,
-    Item,
-    Status,
-    Avatar,
-    Name
+    // Item,
+    // Status,
+    // Avatar,
+    // Name
 } from 'components/FriendList/FriendList.styled';
 
 
@@ -19,7 +19,11 @@ export function FriendList({ title, friends = [] }) {
                 {friends.map(friend => (
                     <FriendListItem
                         key={friend.id}
-                        friend={friend} />
+                        // friend={friend}
+                        avatar={friend.avatar}
+                        name={friend.name}
+                        isOnline={friend.isOnline}
+                    />
                 // <Item
                 //     friendIsOnline={friend.isOnline ? 'On' : 'Off'}
                 //     key={friend.id} 
