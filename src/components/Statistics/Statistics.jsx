@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { FcStatistics } from "react-icons/fc";
 
-import { iconSize } from 'constants';
+import { iconSize } from 'configs';
 
 
 

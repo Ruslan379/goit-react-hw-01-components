@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'; //! Нужен ОБЯЗАТЕЛЬНО!
 
 import { ThemeProvider } from '@emotion/react';
-import { theme } from 'constants';
+import { theme } from 'configs';
 
 import './index.css';
 

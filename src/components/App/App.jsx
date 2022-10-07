@@ -1,7 +1,7 @@
-import user from 'user.json'
-import data from 'data.json'
-import friends from 'friends.json'
-import transactions from 'transactions.json'
+import user from 'data-json/user.json'
+import data from 'data-json/data.json'
+import friends from 'data-json/friends.json'
+import transactions from 'data-json/transactions.json'
 
 
 import { Profile } from 'components/Profile/Profile.jsx';
@@ -10,22 +10,35 @@ import { FriendList } from 'components/FriendList/FriendList.jsx';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory.jsx';
 
 
-import { Container } from 'components/App/App.styled'; 
+import { Container } from 'components/App/App.styled';
 
+
+
+//! 2-й ВАРИАНТ: Передача пропсов с дестуктуризацией:
+// const {
+//   username,
+//   tag,
+//   location,
+//   avatar,
+//   stats: {
+//     followers,
+//     views,
+//     likes
+//   }
+// } = user;
+
+
+//! 4-й ВАРИАНТ: Передача пропсов с дестуктуризацией как в ТЗ:
+const {
+  username,
+  tag,
+  location,
+  avatar,
+  stats,
+} = user;
 
 
 export default function App() {
-  //! 2-й ВАРИАНТ: Передача пропсов с дестуктуризацией:
-  const {
-    username,
-    tag,
-    location,
-    avatar,
-    stats: {
-    followers,
-    views,
-    likes
-    } } = user;
   
   return (
     <Container>
@@ -40,16 +53,24 @@ export default function App() {
         // likes={user.stats.likes}
 
         //! 2-й ВАРИАНТ: Передача пропсов с дестуктуризацией:
+        // username={username}
+        // tag={tag}
+        // location={location}
+        // avatar={avatar}
+        // followers={followers}
+        // views={views}
+        // likes={likes}
+
+        //! 3-й ВАРИАНТ: Передача пропсов одним объектом:
+        // userArr={user}
+
+        //! 4-й ВАРИАНТ: Передача пропсов с дестуктуризацией как ТЗ:
         username={username}
         tag={tag}
         location={location}
         avatar={avatar}
-        followers={followers}
-        views={views}
-        likes={likes}
+        stats ={stats}
 
-        //! 3-й ВАРИАНТ: Передача пропсов одним объектом:
-        // userArr={user}
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList title="FRIEND LIST" friends={friends} />

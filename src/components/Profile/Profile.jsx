@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FaMapMarkerAlt, FaUserAlt } from 'react-icons/fa';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 
-import { iconSize } from 'constants';
+import { iconSize } from 'configs';
 
 import defaultImage from 'components/default.jpg'; 
 
@@ -34,15 +34,15 @@ import {
 // } = props;
 
 //! 2-й ВАРИАНТ: Передача пропсов с дестуктуризацией:
-export function Profile({
-    avatar = defaultImage,
-    username = "не известно",
-    tag,
-    location,
-    followers,
-    views,
-    likes
-}) {
+// export function Profile({
+//     avatar = defaultImage,
+//     username = "не известно",
+//     tag,
+//     location,
+//     followers,
+//     views,
+//     likes
+// }) {
 
 
 //! 3-й ВАРИАНТ: Передача пропсов одним объектом с дестуктуризацией:
@@ -56,6 +56,20 @@ export function Profile({
 //   likes
 //   }
 // }) {
+
+  
+  //! 4-й ВАРИАНТ: Передача пропсов с дестуктуризацией как в ТЗ:
+  export function Profile({
+      avatar = defaultImage,
+      username = "не известно",
+      tag,
+      location,
+      stats: {
+        followers,
+        views,
+        likes
+      }
+  }) {
 
 
   return (
@@ -113,19 +127,44 @@ export function Profile({
 
 
 //! 1-й и 2-й ВАРИАНТ:
-Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
-};
+// Profile.propTypes = {
+//   username: PropTypes.string.isRequired,
+//   tag: PropTypes.string.isRequired,
+//   location: PropTypes.string.isRequired,
+//   avatar: PropTypes.string.isRequired,
+//   followers: PropTypes.number.isRequired,
+//   views: PropTypes.number.isRequired,
+//   likes: PropTypes.number.isRequired,
+// };
 
 
 //! 3-й ВАРИАНТ:
 // Profile.propTypes = {
 //   userArr: PropTypes.object.isRequired,
 // };
+
+
+//! 4_1-й ВАРИАНТ: Передача пропсов с дестуктуризацией как в ТЗ:
+// Profile.propTypes = {
+//   username: PropTypes.string.isRequired,
+//   tag: PropTypes.string.isRequired,
+//   location: PropTypes.string.isRequired,
+//   avatar: PropTypes.string.isRequired,
+//   stats: PropTypes.object.isRequired,
+// };
+
+
+//! 4_2-й ВАРИАНТ: Передача пропсов с дестуктуризацией как в ТЗ:
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+
+  stats: PropTypes.exact({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }),
+};
 

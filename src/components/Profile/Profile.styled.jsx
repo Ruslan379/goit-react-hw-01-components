@@ -48,7 +48,7 @@ export const Name = styled.p`
 
 
 export const Tag = styled.p`
-    margin-top: 0;
+    margin-top: ${props => props.theme.spacing(9)};;
     font-size: ${props => props.theme.spacing(5)};
     line-height: ${props => props.theme.spacing(6)};
     font-weight: 500;
