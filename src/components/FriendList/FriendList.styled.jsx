@@ -25,7 +25,7 @@ export const StatList = styled.ul`
     justify-content: space-between;
 
     padding: 0;
-    margin-top: ${props => props.theme.spacing(5.25)};
+    margin-top: ${props => props.theme.spacing(9)};
 
     list-style-type: none;
     text-align: center; 
@@ -91,7 +91,9 @@ export const Avatar = styled.img`
 
 
 export const Name = styled.p`
-    margin-left: ${props => props.theme.spacing(7)};
+    // margin-left: ${props => props.theme.spacing(7)};
+    // margin-right: ${props => props.theme.spacing(7)};
+    margin: ${props => props.theme.spacing(0)} ${props => props.theme.spacing(8.5)};
 
     font-size: ${props => props.theme.spacing(6)};
     line-height: ${props => props.theme.spacing(6)};

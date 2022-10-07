@@ -24,7 +24,7 @@ export const ItemHistory = styled.table`
     // text-indent: 34px;
     // text-indent: 5em each-line;
 
-    margin-top: ${props => props.theme.spacing(4)};
+    margin-top: ${props => props.theme.spacing(7.7)};
     text-align: center;
     font-size: ${props => props.theme.spacing(3)};
     box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};

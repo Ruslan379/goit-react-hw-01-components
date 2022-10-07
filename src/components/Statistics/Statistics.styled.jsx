@@ -72,7 +72,7 @@ export const Percentage = styled.span`
 
 //!=============== icons ==================== 
 export const IconStatistic = styled.p`
-    margin-top: ${props => props.theme.spacing(5)};
+    margin-top: ${props => props.theme.spacing(12.7)};
 
     svg {
         // margin-right: ${props => props.theme.spacing(3)};
