@@ -20,6 +20,11 @@ export const TransactionsHistory = styled.section`
 export const ItemHistory = styled.table`
     border-collapse: collapse;
     text-transform: capitalize;
+
+    // text-indent: 34px;
+    // text-indent: 5em each-line;
+
+    margin-top: ${props => props.theme.spacing(3.5)};
     text-align: center;
     font-size: ${props => props.theme.spacing(3)};
     box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};
@@ -27,14 +32,16 @@ export const ItemHistory = styled.table`
 
 
 export const TableTh = styled.th`
-    padding: ${props => props.theme.spacing(2)};
+    text-align: center;
+    padding: ${props => props.theme.spacing(2)} ${props => props.theme.spacing(7.5)};
     border: 1px solid ${props => props.theme.colors.borderTable};
     background-color: ${props => props.theme.colors.backgroundNameColor};
 `;
 
 
 export const TableTd = styled.td`
-    padding: ${props => props.theme.spacing(1)};
+    text-align: center;
+    padding: ${props => props.theme.spacing(1.2)};
     border: 1px solid ${props => props.theme.colors.borderTable};
     background-color: ${props => props.theme.colors.backgroundTable};
 `;
