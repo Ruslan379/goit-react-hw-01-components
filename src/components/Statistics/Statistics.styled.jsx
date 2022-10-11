@@ -44,7 +44,6 @@ export const Item = styled.li`
     border-bottom: 2px solid ${props => props.theme.colors.black};
 
     background-color: ${props => props.randomColor};
-    }
 `;
 
 
