@@ -4,6 +4,7 @@ import {
     TransactionsHistory,
     ItemHistory,
     TableTh,
+    TableTbody,
     TableTd
 } from 'components/TransactionHistory/TransactionHistory.styled'; 
 
@@ -23,7 +24,7 @@ export function TransactionHistory({ title, items = [] }) {
                     </tr>
                 </thead>
 
-                <tbody>
+                <TableTbody>
                     {items.map(item => (
                         <tr key={item.id}>
                             <TableTd>{item.type}</TableTd>
@@ -31,7 +32,7 @@ export function TransactionHistory({ title, items = [] }) {
                             <TableTd>{item.currency}</TableTd>
                         </tr>
                     ))}
-                </tbody>
+                </TableTbody>
             </ItemHistory>
         </TransactionsHistory>
     );

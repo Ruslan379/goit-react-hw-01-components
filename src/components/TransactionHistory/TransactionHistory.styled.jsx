@@ -27,6 +27,11 @@ export const ItemHistory = styled.table`
     margin-top: ${props => props.theme.spacing(7.7)};
     text-align: center;
     font-size: ${props => props.theme.spacing(3)};
+
+    border: 1px solid ${props => props.theme.colors.black};
+    border-right: 3px solid ${props => props.theme.colors.black};
+    border-bottom: 3px solid ${props => props.theme.colors.black};
+    border-radius: ${props => props.theme.spacing(0.5)};
     box-shadow: 10px 10px 14px -3px ${props => props.theme.colors.boxShadowCardColor};
 `;
 
@@ -38,6 +43,10 @@ export const TableTh = styled.th`
     background-color: ${props => props.theme.colors.backgroundNameColor};
 `;
 
+
+export const TableTbody = styled.tbody`
+    color: ${props => props.theme.colors.redLocation};
+`;
 
 export const TableTd = styled.td`
     text-align: center;
